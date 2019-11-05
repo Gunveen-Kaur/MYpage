@@ -1,0 +1,276 @@
+*{
+	/* Universal reset: */
+	margin:0;
+	padding:0;
+}
+
+header,footer,
+article,section,main,
+hgroup,nav,
+figure,aside{
+	/* Giving a display value to the HTML5 rendered elements: */
+	display:block;
+}
+main{
+	width:60%;
+	float:right;
+}
+
+body{
+	/* Setting the default text color, size, page background and a font stack: */
+	width:absolute;
+	font-size:0.825em;
+	color:#fcfcfc;
+	font-family:serif, sans-serif, cursuve;
+	/*border:5px Double DarkGray;
+	border-radius:20px;*/
+	background-image:url(../images/ASUSLOGO.png) ;
+	background-size:contain;
+	background-repeat:repeat;
+}
+
+/* Hyperlink Styles: */
+
+a, a:visited {
+	color:white;
+	text-decoration:none;
+	outline:none;
+}
+
+a:hover{
+	font-weight: bolder;
+}
+
+a img{
+	border:none;
+}
+
+/* Headings: */
+
+h1,h2,h3{
+	font-family:"Myriad Pro","Helvetica Neue",Helvetica,Arial,Sans-Serif;
+	text-shadow:0 1px 1px black;
+}
+
+h1{
+	/* The logo text */
+	text-align:center;
+	font-family:cursive;
+	color:Teal;
+	font-size:3.5em;
+	padding:0.5em 0 0;
+}
+
+h3{
+	/* The slogan text */
+	text-align:center;
+	font-family:forte,"Myriad Pro","Helvetica Neue",Helvetica,Arial,Sans-Serif;
+	color:Teal;
+	font-size:2em;
+	font-weight:normal;
+	margin:0 0 1em;
+}
+
+h2{
+	font-size:2.2em;
+	font-weight:normal;
+	letter-spacing:0.01em;
+	text-transform:uppercase;
+}
+.go_up {
+	float: right; 
+	padding-right: 15px; 
+}
+p{
+	line-height:1.5em;
+	padding-bottom:1em;
+	font-size:1.5em;
+	color:azure;
+}
+.pbold{
+	font-size:1.2em;
+	font-weight:bold;
+	letter-spacing:0.01em;
+	text-transform:uppercase;
+}
+
+#price {
+	font-family:Cursive;
+	font-size:2.4em;
+	font-weight:bold;
+	color:White;
+}
+.line{
+	/* The dividing line: */
+	height:1px;
+	background-color:LightGray;
+	border-bottom:5px double #416371;
+	margin:1em 0;
+	overflow:hidden;
+}
+
+article .line{
+	/* The dividing line inside of the article is darker: */
+	background-color:LightGray;
+	border-bottom-color:Gray;
+	border-bottom-style:dotted;
+	margin:1.3em 0;
+}
+
+footer .line{
+	margin:2em 0;
+}
+
+nav{
+	background:url(../images/gradient_light.jpg) repeat-x 50% 50% #f8f8f8;
+	padding:0 5px;
+	/*position:absolute;*/
+	right:0;
+	top:4em;
+	
+	border:1px solid #FCFCFC;
+
+	-moz-box-shadow:0 1px 1px #333333;
+	-webkit-box-shadow:0 1px 1px #333333;
+	box-shadow:0 1px 1px #333333;
+	font-family:Times new Roman;
+}
+
+/* The clearfix hack to clear the floats: */
+
+.clear:after{
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+/* The navigation styling: */
+
+nav ul li{
+	display:inline;
+}
+
+nav ul li a,
+nav ul li a:visited{
+	color:teal;
+	font-family:cursive;
+	text-align:center;
+	display:block;
+	float:left;
+	font-size:2em;
+	font-weight:bold;
+	margin:5px 2px;
+	padding:7px 10px 4px;
+	text-shadow:0 1px 1px white;
+	text-transform:uppercase;
+}
+
+nav ul li a:hover{
+	text-decoration:none;
+	background-color:#f0f0f0;
+}
+
+nav, article, nav ul li a,figure{
+	/* Applying CSS3 rounded corners: */
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	border-radius:10px;
+}
+
+/* Article styles: */
+
+article{
+	background-color:Gray;
+	margin:1em 0;
+	padding:20px;
+	
+	text-shadow:0 2px 0 black;
+}
+
+figure{
+	border:3px solid #142830;
+	float:right;
+	height:relative;
+	margin-left:15px;
+	overflow:hidden;
+	width:relative;
+}
+/*	aside styling*/
+aside{
+	text-align:center;
+	border:3px Double LightGray;
+	border-radius:10px;
+	background-color:Gray;
+	width:37%;
+	float:left;
+}
+aside h2{
+	float:left;
+	font-family:serif,cursive,Times New Roman;
+	font-weight:bold;
+	color:Teal;
+	
+}
+aside p{
+	font-family:serif,cursive,Times New Roman;
+	text-align:left;
+	font-weight:bold;
+	font-size:1.0em;
+	color:azure;
+	
+}
+aside p em{
+	color:gold;
+	float:center-right;
+	font-size:1.0em;
+	text-shadow:Brown;
+}
+aside p.review{
+	color:white;
+	font-size:0.5em;
+	text-transform:capitalize;
+	font-style:italic;
+}
+
+/* Footer styling: */
+
+footer{
+	clear:both;
+	margin-bottom:30px;
+	text-align:center;
+	background-color:LightGray;
+}
+
+
+footer p{
+	margin-bottom:-2.5em;
+	position:relative;
+	color:navy;
+	font-size:1.5em;
+	font-weight:bold;
+}
+
+footer a,footer a:visited{
+	color:Black;
+	font-size:1em;
+	display:block;
+	padding:2px 4px;
+	z-index:100;
+	position:relative;
+}
+
+footer a:hover{
+	text-decoration:none;
+	font-style:italic;
+}
+
+footer a.by{
+	float:left;
+
+}
+
+footer a.up{
+	float:right;
+}
